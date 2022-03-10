@@ -77,7 +77,6 @@ input {
 
 .settings {
   display: flex;
-  flex: 1 0 30%;
   flex-direction: column;
   align-self: flex-start;
   gap: 1.6rem;
