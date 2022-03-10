@@ -29,6 +29,7 @@ button,
 input {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .container {
@@ -50,8 +51,87 @@ input {
 }
 
 .header-title {
-  font-size: 4.8rem;
+  font-size: 6.4rem;
   font-weight: 700;
 }
 
 /* MAIN */
+
+.main .container {
+  display: flex;
+  gap: 4rem;
+}
+
+.settings {
+  display: flex;
+  flex: 1 0 30%;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 1.6rem;
+}
+
+.settings * {
+  transition: all 0.3s ease;
+  font-size: 1.8rem;
+}
+
+.settings *:hover {
+  transform: scale(1.05);
+}
+
+.settings .color-picker {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: transparent;
+  align-self: center;
+  transition: all 0.2s ease;
+}
+
+.settings .color-picker::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.settings button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+  border-radius: 9px;
+}
+
+.settings .size-value {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.settings .size-slider {
+  -webkit-appearance: none;
+}
+
+.settings .size-slider::-webkit-slider-runnable-track {
+  height: 1rem;
+  border-radius: 2.5rem;
+  background-color: #efefef;
+}
+
+.settings .size-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -8px;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: indianred;
+  border-radius: 50%;
+}
+
+.grid-container {
+  display: grid;
+  width: 64rem;
+  height: 64rem;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 4px 1rem 5px rgba(0, 0, 0, 0.1);
+}
