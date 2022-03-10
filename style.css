@@ -103,6 +103,11 @@ input {
   border-radius: 9px;
 }
 
+.settings button.active {
+  background-color: var(--color-black);
+  color: var(--color-light);
+}
+
 .settings .size-value {
   font-size: 2rem;
   text-align: center;
@@ -134,4 +139,11 @@ input {
   background-color: #fff;
   border-radius: 9px;
   box-shadow: 0 4px 1rem 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-element {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
