@@ -1,7 +1,7 @@
 "use strict";
 
 // DEFAULT CONSTANTS AND VARIABLES
-const DEFAULT_COLOR = "#222831",
+const DEFAULT_COLOR = "#cd5c5c",
   DEFAULT_MODE = "color",
   DEFAULT_SIZE = 16;
 
