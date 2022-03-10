@@ -2,6 +2,17 @@
   --color-light: #f8f9fa;
   --color-black: #111720;
   --color-dark-grey: #222831;
+  --color-indianred: #cd5c5c;
+}
+
+::-moz-selection {
+  background-color: var(--color-indianred);
+  color: var(--color-light);
+}
+
+::selection {
+  background-color: var(--color-indianred);
+  color: var(--color-light);
 }
 
 /* Basic reset */
@@ -15,6 +26,8 @@ html {
 
 body {
   background-color: var(--color-light);
+  min-height: 100vh;
+  position: relative;
 }
 
 *,
@@ -75,7 +88,8 @@ input {
   font-size: 1.8rem;
 }
 
-.settings *:hover {
+.settings button:hover,
+.settings input.color-picker {
   transform: scale(1.05);
 }
 
@@ -104,7 +118,7 @@ input {
 }
 
 .settings button.active {
-  background-color: var(--color-black);
+  background-color: var(--color-indianred);
   color: var(--color-light);
 }
 
@@ -146,4 +160,12 @@ input {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.8rem;
 }
