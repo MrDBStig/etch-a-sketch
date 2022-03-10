@@ -1,0 +1,57 @@
+:root {
+  --color-light: #f8f9fa;
+  --color-black: #111720;
+  --color-dark-grey: #222831;
+}
+
+/* Basic reset */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-black);
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--color-light);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HEADER */
+
+.header,
+.main,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.6rem 0;
+}
+
+.header-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+/* MAIN */
